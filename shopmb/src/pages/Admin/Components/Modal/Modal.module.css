@@ -1,0 +1,57 @@
+.wapper {
+    width: 800px;
+    max-width: 95%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 7px;
+    overflow: hidden;
+    animation: toBottom 0.3s;
+    box-shadow: 0 0 5px rgb(58, 56, 56);
+}
+@keyframes toBottom {
+    from {
+        margin-top: 20px;
+    }
+    to {
+        margin-top: 40px;
+    }
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+    height: 100%;
+    background-color: var(--blueAdminSub);
+}
+.row .close button {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+.title {
+    width: 100%;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: var(--blueAdmin);
+}
+.btn {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 10px 20px;
+}
+.formContent {
+    padding: 15px 40px;
+    flex: 1;
+    overflow-y: auto;
+}

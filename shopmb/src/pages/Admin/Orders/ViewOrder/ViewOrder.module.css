@@ -1,0 +1,101 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    width: 800px;
+    max-width: 95%;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 3px #ccc;
+    overflow: hidden;
+}
+.box > .title {
+    position: relative;
+    padding: 10px;
+    color: #fff;
+    background-color: var(--blueAdmin);
+}
+.box > .title .icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.box .nav_tab {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    box-shadow: 0 0 3px rgb(218, 217, 217);
+}
+.box .nav_tab ul {
+    display: flex;
+    margin-top: 5px;
+}
+.box .nav_tab ul li {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: all 0.3s linear;
+}
+.box .nav_tab ul li.active {
+    cursor: default;
+    color: #fff;
+    background-color: rgba(140, 161, 232, 0.5);
+}
+.box .nav_tab .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100px;
+    border-radius: 3px;
+    background-color: var(--blueAdmin);
+    transition: all 0.3s linear;
+}
+.box .content {
+    flex: 1;
+    overflow-y: scroll;
+    padding: 20px 10px 20px 20px;
+}
+.table {
+    overflow: auto;
+}
+.table + .table {
+    margin-top: 20px;
+}
+.table .title {
+    margin-bottom: 10px;
+}
+.table table {
+    width: 100%;
+    min-width: max-content;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+.table table tr {
+    border: 1px solid #ccc;
+}
+.table table tr th {
+    background-color: #f0f3fc;
+    padding: 5px;
+}
+.table table tr td {
+    padding: 10px;
+}
+.table table tr td span{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.table table tr td + td {
+    border-left: 1px solid #ccc;
+}
+.table table tr td img {
+    width: 80px;
+    object-fit: contain;
+    object-position: center;
+}

@@ -1,0 +1,14 @@
+.wapper {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: var(--blueAdminSub);
+}
+.btn {
+    margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 950px) {
+    .wapper table tr td img {
+        width: 80px;
+    }
+}

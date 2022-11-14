@@ -1,0 +1,112 @@
+.wapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* margin-left: 260px; */
+    padding: 10px 20px 0 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px #e4eafa;
+    background-color: var(--blueAdminSub);
+    z-index: 10;
+}
+.header .icon {
+    padding: 5px;
+}
+.header ul {
+    display: flex;
+}
+.header ul li {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.header .search {
+    position: relative;
+}
+.header .search input {
+    width: 250px;
+    padding: 9px 10px;
+    border-radius: 5px;
+}
+.header .search .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* .header ul li .search button {
+    position: absolute;
+    
+    background-color: transparent;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+} */
+.header ul li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.header ul li label {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.header ul li label:hover {
+    opacity: 0.8;
+}
+.header ul li label i {
+    margin-right: 10px;
+}
+.header ul li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    bottom: 50%;
+    left: 50%;
+    font-size: 11px;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--blueAdmin);
+    background-color: var(--blueAdmin);
+}
+.content {
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+@media (min-width: 320px) and (max-width: 993px) {
+    .wapper {
+        padding: 10px 10px 0 10px;
+    }
+    .header {
+        justify-content: space-between;
+    }
+}
+@media (min-width: 320px) and (max-width: 830px) {
+    .header .search {
+        display: none;
+    }
+}
+@media (min-width: 320px) and (max-width: 380px) {
+    .header ul li:nth-child(2),
+    .header ul li:nth-child(3) {
+        display: none;
+    }
+}

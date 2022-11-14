@@ -1,0 +1,19 @@
+.row {
+    display: flex;
+}
+.colum_left {
+    width: 70%;
+}
+.colum_right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .colum_left {
+        width: 100%;
+    }
+    .colum_right {
+        display: none;
+    }
+}

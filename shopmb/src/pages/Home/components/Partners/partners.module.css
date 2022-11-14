@@ -1,0 +1,26 @@
+.box .list_partners {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+.partners {
+    max-width: 150px;
+    text-align: center;
+}
+.partners img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+}
+@media (min-width: 320px) and (max-width: 766px) {
+    .box .list_partners {
+        gap: 10px;
+    }
+    .partners {
+        max-width: 150px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,75 @@
+.wapper {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+}
+.box .title {
+    width: 100%;
+    padding: 5px 0;
+    padding: 5px 10px;
+    background-color: #ccc;
+}
+.box .result {
+    width: 100%;
+    padding: 10px;
+}
+.box .result ul {
+    display: flex;
+    flex-direction: column;
+}
+.box .result ul li {
+    padding: 5px 0;
+    display: flex;
+}
+.box .result ul li + li {
+    border-top: 1px solid #ccc;
+}
+.box .result ul li a {
+    display: flex;
+}
+.box .result ul li .img {
+    width: 30%;
+    height: 80px;
+}
+.box .result ul li .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.box .result ul li .info {
+    width: 70%;
+    padding-left: 10px;
+}
+.box .result ul li .info h4 {
+    margin-bottom: 10px;
+}
+.box .result ul li .info h4,
+.box .result ul li .info span {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.box .nextPage {
+    text-align: center;
+    padding: 5px;
+}
+.box .nextPage a {
+    color: var(--blue);
+    text-decoration: underline;
+}
+.err {
+    width: 100%;
+    padding: 30px 10px;
+    text-align: center;
+}
+.err p {
+    font-size: 13px;
+    padding: 10px 0;
+}

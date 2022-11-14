@@ -1,0 +1,64 @@
+.rating {
+    width: 100%;
+}
+.rating .title {
+    padding: 10px 0;
+}
+.rating .review_star_rating {
+    width: 100%;
+    display: flex;
+}
+.rating .review_star_rating .start_rating_item {
+    width: 25%;
+    text-align: center;
+}
+.review_star_rating .start_rating_item:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+}
+.rating .review_star_rating .start_rating_item p {
+    margin: 5px 0;
+}
+.rating .review_star_rating .start_rating_item p i {
+    color: #fed330;
+}
+.rating .review_star_rating .start_rating_item button {
+    margin: 10px auto 0 auto;
+}
+.star_line {
+    width: 50%;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+    .rating .title h3 {
+        font-size: 15px;
+    }
+    .rating .review_star_rating {
+        flex-wrap: wrap;
+    }
+    .review_star_rating .start_rating_item h4 {
+        font-size: 14px;
+    }
+    .review_star_rating .start_rating_item:nth-child(1) {
+        width: 40%;
+    }
+    .star_line {
+        width: 60%;
+        padding: 0 5px;
+    }
+    .review_star_rating .start_rating_item:nth-child(3) {
+        width: 100%;
+        padding: 20px;
+    }
+    .review_star_rating .start_rating_item button {
+        width: 100%;
+    }
+}
+@media (min-width: 320px) and (max-width: 450px) {
+    /* .start_rating_item {
+        width: 100% !important;
+    }
+    .star_line {
+        width: 100%;
+    } */
+}

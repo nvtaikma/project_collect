@@ -1,0 +1,68 @@
+.cagetory_title {
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.cagetory_title h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    bottom: 0;
+    margin: 15px auto 20px;
+    background-color: #8888;
+    transition: all 0.3s linear;
+}
+.cagetory_title h2:hover::after {
+    width: 120px;
+}
+.box {
+    width: 100%;
+    position: relative;
+}
+.box .prev {
+    position: absolute;
+    left: -5px;
+    top: 25%;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #d3cccc;
+    box-shadow: 0 0 5px #fff;
+    z-index: 10;
+}
+.box .next {
+    position: absolute;
+    right: -5px;
+    top: 25%;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #d3cccc;
+    box-shadow: 0 0 5px #fff;
+    z-index: 10;
+}
+.container_list_cagetory {
+    width: 100%;
+    overflow: hidden;
+}
+.list_cagetory {
+    display: flex;
+    width: max-content;
+    min-width: 100%;
+    transition: all 0.3s linear;
+}
+.list_cagetory a {
+    text-decoration: none;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+}
+@media (min-width: 320px) and (max-width: 766px) {
+}

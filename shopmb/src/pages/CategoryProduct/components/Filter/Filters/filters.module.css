@@ -1,0 +1,65 @@
+.filters {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    padding: 20px;
+    background-color: #888888;
+    z-index: 100;
+    transition: all 0.3s linear;
+}
+.filters.show {
+    left: 0;
+}
+.filters_title {
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    margin-bottom: 20px;
+}
+.filters_title h4 {
+    color: #fff;
+}
+.filters_title h4 i {
+    font-size: 12px;
+    margin-right: 7px;
+}
+.filters_title .close {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+}
+.filters_title .close i {
+    color: var(--white);
+    font-size: 18px;
+}
+.filters_item + .filters_item {
+    margin-top: 20px;
+}
+.filters_item label {
+    color: #fff;
+}
+.filters_item select {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.btn_submit {
+    width: 100%;
+    margin-top: 40px;
+    border: 2px solid #fff;
+}
+.btn_submit:hover {
+    opacity: 0.8;
+}
+.btn_submit button {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}

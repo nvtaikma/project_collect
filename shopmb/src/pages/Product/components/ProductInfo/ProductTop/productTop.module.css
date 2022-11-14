@@ -1,0 +1,15 @@
+.title_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.name_product h2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,44 @@
+.wapper {
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--blueAdminSub);
+}
+.btn {
+    margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 1235px) {
+    .wapper table tr th:nth-child(4),
+    .wapper table tr td:nth-child(4) {
+        display: none;
+    }
+}
+@media (min-width: 320px) and (max-width: 850px) {
+    .wapper table {
+        min-width: max-content;
+    }
+    .wapper table tr td img {
+        width: 50px;
+    }
+    .wapper table tr td span {
+        max-width: 150px;
+    }
+}
+/* @media (min-width: 320px) and (max-width: 700px) {
+    .wapper table tr th:nth-child(3),
+    .wapper table tr td:nth-child(3),
+    .wapper table tr th:nth-child(7),
+    .wapper table tr td:nth-child(7) {
+        display: none;
+    }
+}
+@media (min-width: 320px) and (max-width: 580px) {
+    .wapper table tr td img {
+        width: 50px;
+    }
+    .wapper table tr td span {
+        max-width: 150px;
+    }
+} */

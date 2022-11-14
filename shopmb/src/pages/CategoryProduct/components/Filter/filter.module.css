@@ -1,0 +1,33 @@
+.filter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.filters {
+    float: left;
+}
+.filters button {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #e6e6e6;
+}
+.filters button i {
+    margin-right: 5px;
+}
+.sort {
+    float: right;
+}
+/* .sort span i {
+    margin-right: 5px;
+} */
+.sort select {
+    margin-left: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #e6e6e6;
+}

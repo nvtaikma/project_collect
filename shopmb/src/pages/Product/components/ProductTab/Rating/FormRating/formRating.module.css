@@ -1,0 +1,53 @@
+.formRating {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+.formRating .formRating_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.formRating .formRating_left ul {
+    display: flex;
+}
+.formRating .formRating_left ul li {
+    list-style: none;
+    margin-right: 5px;
+    color: #ccc;
+    cursor: pointer;
+}
+.formRating .formRating_left ul li.active {
+    color: #fed330;
+}
+.formRating .formRating_right {
+    width: 70%;
+}
+.formRating .formRating_right textarea {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+}
+.formRating .formRating_right button {
+    margin-top: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .formRating {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .formRating .formRating_left {
+        width: 100%;
+    }
+    .formRating .formRating_right {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

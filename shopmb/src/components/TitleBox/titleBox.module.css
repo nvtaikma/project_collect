@@ -1,0 +1,15 @@
+.title h2 {
+    text-align: center;
+}
+.title h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin: 15px auto 30px;
+    background-color: #8888;
+    transition: all 0.3s linear;
+}
+.title h2:hover::after {
+    width: 120px;
+}

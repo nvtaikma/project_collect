@@ -1,0 +1,102 @@
+.order_contain {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px #ccc;
+}
+.orders_list {
+    font-size: 14px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #caedf8;
+    transition: all 0.3s linear;
+}
+.orders_list + .orders_list {
+    margin-top: 10px;
+}
+.orders_list .order_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgba(204, 204, 204, 0.267);
+}
+.orders_list .order_top p + p {
+    padding-top: 5px;
+}
+.orders_list .order_top p span {
+    padding-right: 5px;
+}
+.order_top_item {
+    width: 30%;
+}
+.orders_list .order_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.orders_list .order_info + .order_info {
+    border-top: 1px solid #ccc;
+}
+.orders_list .order_info .order_info_item {
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 30%;
+    min-width: 120px;
+}
+.orders_list .order_info .order_info_item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    object-position: center;
+}
+.orders_list .order_info .order_info_item span {
+    padding-top: 15px;
+    /* max-width: 100%; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    height: max-content;
+    overflow: hidden;
+}
+.orders_list .button {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .order_top_item {
+        width: 48%;
+    }
+    .order_top_item:nth-child(3) {
+        display: none;
+    }
+    .orders_list .order_info .order_info_item {
+        flex-direction: column;
+    }
+    .orders_list .order_info .order_info_item > span {
+        padding-top: 0;
+    }
+}
+@media (min-width: 320px) and (max-width: 450px) {
+    .orders_list .order_top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order_top_item {
+        width: 100%;
+    }
+    .order_top_item:nth-child(2) {
+        margin-top: 5px;
+    }
+    .order_top_item > p {
+        text-align: start !important;
+        padding-top: 10px;
+    }
+    .orders_list .order_info .order_info_item:nth-child(3) {
+        margin-top: 10px;
+    }
+}

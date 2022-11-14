@@ -1,0 +1,83 @@
+.active {
+    /* background-color: var(--blueAdmin);
+    box-shadow: 0 0 5px var(--blueAdmin); */
+    background-color: rgb(134, 134, 134);
+}
+.wapper {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.wapper + .wapper {
+    margin-top: 10px;
+}
+.wapper a {
+    display: block;
+}
+.wapper label {
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.wapper span {
+    /* width: 100%;
+    height: 100%; */
+    padding-left: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s linear;
+}
+.wapper span:hover {
+    padding-left: 20px;
+}
+.wapper i {
+    font-size: 20px;
+}
+.wapper .icon {
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    transition: all 0.3s linear;
+}
+ul.dropMenu {
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgb(83, 83, 83);
+    /* background-color: red; */
+    transition: all 0.3s linear;
+    z-index: 99;
+}
+ul.dropMenu li {
+    color: #fff;
+}
+ul.dropMenu li a {
+    border-radius: 5px;
+    color: #fff;
+
+    padding: 10px;
+    padding-left: 20px;
+}
+ul.dropMenu li a {
+    transition: all 0.3s linear;
+}
+ul.dropMenu li a:hover {
+    padding-left: 30px;
+}
+/* ul.dropMenu li a.active {
+    background-color: var(--blueAdmin);
+} */
+ul.dropMenu li a i {
+    padding-right: 15px;
+}

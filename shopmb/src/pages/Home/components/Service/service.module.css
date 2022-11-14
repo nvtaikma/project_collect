@@ -1,0 +1,77 @@
+.serviceBlock {
+    padding: 80px 0 70px;
+}
+.service_container {
+    padding-top: 0;
+}
+.service_area {
+    display: flex;
+}
+.service_area .service_item {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    color: #888;
+}
+.service_area .service_item:hover ::after {
+    transform: scaleX(1);
+}
+.service_area .service_item + .service_item {
+    border-left: 1px solid rgb(104, 103, 103);
+}
+.service_item .service_icon {
+    margin-right: 15px;
+    padding: 5px;
+    position: relative;
+}
+.service_item .service_icon::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: all 0.2s linear;
+}
+.service_item .service_icon i {
+    font-size: 30px;
+}
+.service_item .service_content .service_heading {
+    color: #000;
+    padding-bottom: 5px;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+    .service_area .service_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .service_area .service_item:hover ::after {
+        transform: scaleX(0);
+    }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+    .service_area {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service_area .service_item:nth-child(1),
+    .service_area .service_item:nth-child(3) {
+        border-left: none;
+    }
+    .service_area .service_item:nth-child(3),
+    .service_area .service_item:nth-child(4) {
+        margin-top: 10px;
+        display: none;
+    }
+    .service_area .service_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+    }
+}

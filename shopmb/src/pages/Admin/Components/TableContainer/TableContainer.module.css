@@ -1,0 +1,83 @@
+.wapper {
+    width: 100%;
+    margin-top: 20px;
+    overflow: auto;
+}
+.wapper table {
+    width: 100%;
+    min-width: max-content;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+.wapper table tr th {
+    padding: 5px;
+    background-color: #f0f3fc;
+    padding: 10px 0;
+}
+.wapper table tr td {
+    text-align: center;
+    padding: 10px 10px;
+    border: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
+}
+.wapper table tr:nth-child(2n - 1) {
+    background-color: rgba(240, 243, 252, 0.5);
+}
+.wapper table tr td > span {
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 0 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.wapper table tr td p {
+    text-align: center;
+}
+.wapper table tr td img {
+    width: 80px;
+    height: 60px;
+    object-fit: contain;
+    object-position: center;
+}
+.wapper table tr td label {
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.wapper table tr td label + label {
+    margin-left: 15px;
+}
+.wapper table tr td label i {
+    transition: all 0.2s linear;
+    color: rgb(100, 100, 100);
+}
+.wapper table tr td button,
+.wapper table tr td label:hover i {
+    color: #000;
+}
+.wapper table tr td button,
+.wapper table tr td label:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+.wapper table tr td label span {
+    position: absolute;
+    display: inline-block;
+    min-width: 50px;
+    width: max-content;
+    right: 0;
+    bottom: 100%;
+    font-size: 13px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #5f5e5e;
+    box-shadow: 0 0 3px #5f5e5e;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s linear;
+}

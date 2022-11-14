@@ -1,0 +1,10 @@
+.back_to_top {
+    position: fixed;
+    right: -50px;
+    bottom: 50px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.back_to_top.show {
+    right: 20px;
+}

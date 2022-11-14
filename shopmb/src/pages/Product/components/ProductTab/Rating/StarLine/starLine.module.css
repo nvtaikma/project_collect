@@ -1,0 +1,31 @@
+.starLine_item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.star_number {
+    width: 30px;
+}
+.star_number i {
+    color: #fed330;
+}
+.star_line {
+    width: 70%;
+    height: 7px;
+    background-color: rgb(223, 221, 221);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.star_line b {
+    display: block;
+    background-color: #48bb78;
+    width: 0;
+    height: 100%;
+    transition: all 0.5s linear;
+}
+.number {
+    width: 35px;
+    text-align: right;
+}

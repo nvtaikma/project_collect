@@ -1,0 +1,68 @@
+.nav {
+    width: 28%;
+}
+.nav .accountInfo {
+    width: 100%;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px #ccc;
+}
+.nav .accountInfo .img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.nav .accountInfo .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.nav .accountInfo .name {
+    margin-left: 10px;
+    padding-top: 5px;
+}
+.nav .accountInfo .name strong {
+    display: block;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+.nav .profileMenu {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px #ccc;
+}
+.nav .profileMenu ul {
+    width: 100%;
+}
+.nav .profileMenu > ul > li {
+    font-weight: 500;
+}
+.nav .profileMenu > ul > li + li {
+    border-top: 1px solid #ccc;
+}
+.nav .profileMenu ul li i {
+    padding-right: 10px;
+}
+.content {
+    width: 72%;
+    margin-left: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 870px) {
+    .block {
+        flex-direction: column;
+    }
+    .nav {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

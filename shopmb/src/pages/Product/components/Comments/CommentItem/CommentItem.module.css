@@ -1,0 +1,70 @@
+.comment {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+}
+.comment .left {
+    margin-right: 10px;
+}
+.comment .left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.comment .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.comment .right .name {
+    display: flex;
+    margin-bottom: 5px;
+}
+.comment .right .name span {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    color: rgb(155, 154, 154);
+    font-size: 13px;
+    /* line-height: 18px; */
+}
+.comment .right .name span.admin {
+    background-color: rgb(189, 5, 5);
+    color: #fff;
+    line-height: 18px;
+    border-radius: 3px;
+    font-size: 10px;
+    padding: 0 3px;
+}
+.comment .right .created {
+    color: #aaa8a8;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.comment .right .tools {
+    display: flex;
+    margin-top: 10px;
+}
+.comment .right .tools button i {
+    font-size: 18px;
+}
+.input textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    /* box-shadow: 0 0 5px #ccc; */
+    background-color: #f4f4f4;
+}
+.input button {
+    margin-top: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .comment .right .name {
+        flex-wrap: wrap;
+    }
+}

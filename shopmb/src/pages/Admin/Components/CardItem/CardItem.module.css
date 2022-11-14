@@ -1,0 +1,20 @@
+.cardItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    border-radius: 7px;
+    box-shadow: 0 0 3px #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: var(--blueAdminSub);
+}
+.cardItem .item {
+    font-weight: 500;
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .cardItem {
+        margin-bottom: 0;
+    }
+}

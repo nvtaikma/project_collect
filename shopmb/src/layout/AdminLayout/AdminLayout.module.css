@@ -1,0 +1,63 @@
+.wapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f3fc;
+}
+.layout_left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100vh;
+    transition: all 0.3s linear;
+    z-index: 99;
+}
+
+.wapper .layout_left > .icon {
+    position: absolute;
+    color: #ccc;
+    font-size: 15px;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 9;
+}
+.layout_left.active {
+    width: 260px;
+}
+.layout_left ul li > label > span,
+.layout_left ul li > a > label > span {
+    /* display: none !important; */
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.layout_left.active ul li > label > span,
+.layout_left.active ul li > a > label > span {
+    /* display: block !important; */
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    /* height: 36px; */
+}
+.layout_right {
+    width: 100%;
+    padding-left: 80px;
+    height: 100vh;
+    transition: all 0.3s linear;
+}
+@media (min-width: 320px) and (max-width: 992px) {
+    .layout_left {
+        left: -260px;
+    }
+    .layout_left.show_menu {
+        left: 0;
+    }
+    .layout_right {
+        padding-left: 0;
+    }
+}

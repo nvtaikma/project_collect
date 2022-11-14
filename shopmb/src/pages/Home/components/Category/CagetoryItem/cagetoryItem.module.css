@@ -1,0 +1,37 @@
+.cagetory_item {
+    width: 100%;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.cagetory_item:hover > .cagetory_icon img {
+    transform: scale(1.2);
+}
+.cagetory_item .cagetory_icon {
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    background-color: #efefef;
+}
+.cagetory_item .cagetory_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: all 0.3s linear;
+}
+.cagetory_name {
+    display: block;
+    padding: 10px 5px;
+    text-align: center;
+    color: #333;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+}
+@media (min-width: 320px) and (max-width: 766px) {
+    .cagetory_item .cagetory_icon {
+        height: 80px;
+    }
+    .cagetory_item:hover > .cagetory_icon img {
+        transform: scale(1.1);
+    }
+}

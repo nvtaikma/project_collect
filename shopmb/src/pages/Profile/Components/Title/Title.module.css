@@ -1,0 +1,9 @@
+.title {
+    margin-bottom: 20px;
+}
+.title span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ccc;
+    margin-left: 5px;
+}

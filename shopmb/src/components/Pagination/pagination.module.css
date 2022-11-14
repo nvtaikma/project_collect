@@ -1,0 +1,25 @@
+.pagination {
+    padding: 5px;
+    width: 100%;
+}
+.pagination_waper {
+    display: flex;
+    justify-content: flex-end;
+}
+.pagination_waper ul {
+    display: flex;
+}
+.pagination_waper ul li {
+    list-style: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.pagination_waper ul li > span {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    cursor: default;
+}
+.pagination_waper ul li.active button {
+    background-color: #888888;
+}

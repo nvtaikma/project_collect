@@ -1,0 +1,52 @@
+.product_option {
+    width: 100%;
+}
+.product_option .label {
+    width: 100%;
+    padding: 15px 0 5px;
+}
+.product_option .options {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.product_option .options .option {
+    display: flex;
+    min-width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.product_option .options .option:hover {
+    border: 1px solid rgb(112, 112, 153);
+}
+.product_option .options .option.active {
+    border: 1px solid rgb(112, 112, 153);
+    cursor: default;
+}
+.product_option .options .option.active .check {
+    background-color: rgb(112, 112, 153);
+    border: none;
+}
+.product_option .options .option.active .check i {
+    display: block;
+    color: #fff;
+}
+.product_option .options .option .check {
+    display: flex;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+.product_option .options .option .check i {
+    display: none;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+}

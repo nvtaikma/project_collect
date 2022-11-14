@@ -1,0 +1,6 @@
+.wapper {
+    width: 100%;
+}
+.wapper .card + .card {
+    margin-top: 20px;
+}

@@ -1,0 +1,109 @@
+.toast {
+    position: relative;
+    display: flex;
+    width: max-content;
+    min-width: 300px;
+    max-width: 90%;
+    padding: 20px 35px 20px 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 5px #ccc;
+    background-color: #fff;
+    animation: show 0.5s linear forwards;
+}
+.toast + .toast {
+    margin-top: 10px;
+}
+.toast.close {
+    animation: hide 0.5s linear forwards;
+}
+.toast .icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.toast .close_message {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.toast .coutn_down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    animation: coutn_down 3.5s linear forwards;
+}
+
+.toast.success {
+    border-left: 4px solid var(--successMess);
+}
+.toast.success .icon {
+    color: var(--successMess);
+}
+.toast.success .coutn_down {
+    background-color: var(--successMess);
+}
+.toast.warning {
+    border-left: 4px solid var(--warningMess);
+}
+.toast.warning .icon {
+    color: var(--warningMess);
+}
+.toast.warning .coutn_down {
+    background-color: var(--warningMess);
+}
+.toast.error {
+    border-left: 4px solid var(--errorMess);
+}
+.toast.error .icon {
+    color: var(--errorMess);
+}
+.toast.error .coutn_down {
+    background-color: var(--errorMess);
+}
+@keyframes coutn_down {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+@keyframes show {
+    0% {
+        transform: translateX(-120%);
+    }
+    25% {
+        transform: translateX(30px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+@keyframes hide {
+    0% {
+        transform: translateX(20px);
+    }
+    25% {
+        transform: translateX(40px);
+    }
+    100% {
+        transform: translateX(-120%);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 350px) {
+    .toast {
+        min-width: 250px;
+    }
+}

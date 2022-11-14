@@ -1,0 +1,27 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    max-width: 100%;
+    margin: 50px auto;
+}
+.box .logo {
+    text-align: center;
+}
+.box .not_found {
+    text-align: center;
+}
+.box .not_found img {
+    width: 80%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+}
+.box .text {
+    text-align: center;
+    color: red;
+}
+.box .button {
+    margin-top: 20px;
+    text-align: center;
+}

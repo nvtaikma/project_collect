@@ -1,0 +1,92 @@
+.wapper {
+    width: 100%;
+    border-radius: 7px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.wapper .title {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.wapper .created {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.wapper .created ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.wapper .created ul li {
+    padding: 5px 10px;
+}
+.wapper .created ul li + li {
+    border-left: 1px solid #ccc;
+}
+.wapper .created ul li span + span {
+    margin-left: 5px;
+}
+.wapper .relatedNews {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.wapper .relatedNews ul li {
+    position: relative;
+    padding: 5px 25px;
+    color: var(--blue);
+}
+.wapper .relatedNews ul li::after {
+    position: absolute;
+    content: '\27A4';
+    left: 0;
+    top: 3px;
+}
+.wapper .relatedNews ul li a {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    letter-spacing: 0.5px;
+    color: var(--blue);
+    overflow: hidden;
+}
+.wapper .relatedNews ul li a:hover {
+    text-decoration: underline;
+}
+.wapper .des {
+    padding: 20px 0;
+    font-size: 16px;
+}
+.wapper .des h2,
+.wapper .des h3,
+.wapper .des h4 {
+    padding: 10px 0;
+}
+.wapper .des p {
+    padding: 5px 0;
+    letter-spacing: 0.5px;
+}
+.wapper .des strong {
+    width: 100%;
+}
+.wapper .des img {
+    display: block;
+    max-width: 60%;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
+}
+.wapper .des table {
+    margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .wapper .relatedNews ul li a {
+        -webkit-line-clamp: 2;
+    }
+}
+@media (min-width: 320px) and (max-width: 355px) {
+    .wapper .created ul li:nth-child(3) {
+        display: none;
+    }
+}

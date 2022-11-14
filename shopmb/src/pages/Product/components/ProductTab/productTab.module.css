@@ -1,0 +1,36 @@
+.product_tab {
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 0 0 5px #ccc;
+    background-color: #fff;
+}
+.nav_tab {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.nav_tab ul {
+    display: flex;
+    justify-content: center;
+}
+.nav_tab ul li {
+    list-style: none;
+    padding: 0 35px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #888888;
+}
+.nav_tab ul li.active {
+    color: #000;
+    cursor: default;
+}
+.nav_tab ul li:hover {
+    color: #000;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+    .product_tab {
+        padding: 20px 15px;
+    }
+}

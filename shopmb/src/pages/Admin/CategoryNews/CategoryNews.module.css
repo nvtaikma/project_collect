@@ -1,0 +1,8 @@
+.wapper {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: var(--blueAdminSub);
+}
+.btn {
+    margin-top: 20px;
+}

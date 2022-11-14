@@ -1,0 +1,28 @@
+.item > a {
+    text-transform: uppercase;
+}
+.item a.active {
+    color: #5776bb;
+}
+.item > a span,
+.item > span {
+    display: block;
+    padding: 20px 15px;
+}
+.item ul li {
+    padding: 0;
+    font-weight: 400;
+}
+.item ul li a {
+    display: block;
+    padding-bottom: 10px;
+}
+.item ul li a.active span {
+    background-color: rgba(196, 200, 209, 0.356);
+    border-left: 3px solid #5776bb;
+}
+.item ul li span {
+    display: block;
+    padding: 5px 0;
+    padding-left: 38px;
+}

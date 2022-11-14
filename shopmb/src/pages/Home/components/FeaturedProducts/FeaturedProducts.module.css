@@ -1,0 +1,38 @@
+.category_tabs ul {
+    display: flex;
+    justify-content: center;
+}
+.category_tabs ul li {
+    list-style: none;
+    padding: 0 10px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #888888;
+}
+/* .category_tabs ul li span{
+    display: flex;
+} */
+.category_tabs ul li.select {
+    color: blue;
+}
+.category_tabs ul li:hover {
+    color: blue;
+}
+.button {
+    width: 150px;
+    margin: 20px auto;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+}
+@media (min-width: 320px) and (max-width: 766px) {
+    .category_tabs ul li {
+        padding: 0 10px;
+    }
+}
+@media (min-width: 320px) and (max-width: 500px) {
+    .category_tabs ul {
+    justify-content: space-around;
+    }
+    
+}

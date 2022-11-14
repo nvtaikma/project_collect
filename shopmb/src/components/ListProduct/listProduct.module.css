@@ -1,0 +1,27 @@
+.wapper {
+    width: 100%;
+}
+.box {
+    padding-top: 15px;
+}
+.list_product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+    .list_product {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 320px) and (max-width: 833px) {
+    .list_product {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 320px) and (max-width: 500px) {
+    .list_product {
+        grid-template-columns: 1fr;
+    }
+}

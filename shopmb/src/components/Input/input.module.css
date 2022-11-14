@@ -1,0 +1,14 @@
+.wapper {
+    outline: none;
+    border: 1px solid #ccc;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.wapper:focus {
+    box-shadow: 0 0 2px var(--blue);
+}
+.error {
+    border: 1px solid var(--red);
+    background-color: rgb(255, 0, 0, 0.1);
+}

@@ -1,0 +1,35 @@
+.blog_title h2 {
+    text-align: center;
+}
+.blog_title h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin: 15px auto 30px;
+    background-color: #888888;
+    transition: all 0.3s linear;
+}
+.blog_title h2:hover::after {
+    width: 120px;
+}
+.list_blog {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.button {
+    width: 150px;
+    margin: 20px auto;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+    .list_blog {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 320px) and (max-width: 599px) {
+    .list_blog {
+        grid-template-columns: 1fr;
+    }
+}

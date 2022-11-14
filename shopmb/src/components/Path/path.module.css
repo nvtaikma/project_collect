@@ -1,0 +1,47 @@
+.path {
+    /* display: flex;
+    justify-content: center; */
+    width: 100%;
+    padding: 20px 0;
+    background-color: #e6e6e6;
+    margin-bottom: 30px;
+}
+.path ul {
+    display: flex;
+}
+.path ul li {
+    display: flex;
+    list-style: none;
+    padding: 0 10px;
+    position: relative;
+}
+.path ul li i {
+    margin-right: 5px;
+}
+.path ul li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+.path ul li a::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+}
+.path ul li a:hover::before {
+    transform: scaleX(1);
+}
+.path ul li + li::before {
+    position: absolute;
+    content: '\002F';
+    /* width: 1px; */
+    height: 100%;
+    top: 0;
+    left: -2px;
+    /* background-color: #000; */
+}

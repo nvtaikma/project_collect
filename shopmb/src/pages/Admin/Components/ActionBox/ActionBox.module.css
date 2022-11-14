@@ -1,0 +1,67 @@
+.wapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.actionBox_left select {
+    outline: none;
+    padding: 7px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #746969;
+    background-color: transparent;
+}
+.actionBox_right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.actionBox_right .input {
+    position: relative;
+    margin-right: 10px;
+}
+.actionBox_right .input input {
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 1px solid #746969;
+    background-color: transparent;
+    transition: all 0.2s linear;
+}
+.actionBox_right input input:focus {
+    background-color: var(--white);
+}
+
+.actionBox_right .input .loading {
+    position: absolute;
+    top: 25%;
+    right: 3px;
+    color: rgb(151, 151, 151);
+}
+.actionBox_right select {
+    outline: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 1px solid #746969;
+    background-color: transparent;
+}
+/* .actionBox_right select option {
+    background-color: var(--blueAdminSub);
+} */
+
+@media (min-width: 320px) and (max-width: 579px) {
+    .actionBox_right select {
+        margin-top: 10px;
+    }
+}
+@media (min-width: 320px) and (max-width: 435px) {
+    .actionBox_right .input {
+        margin-top: 10px;
+    }
+}
+@media (min-width: 320px) and (max-width: 414px) {
+    .actionBox_right {
+        justify-content: flex-start;
+    }
+}

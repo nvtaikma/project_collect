@@ -1,0 +1,80 @@
+.form_item {
+    display: flex;
+    width: 100%;
+    /* margin-bottom: 10px; */
+}
+.form_item .form_item_label {
+    width: 25%;
+    max-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+.form_item .form_item_label span {
+    display: block;
+    font-size: 13px;
+    opacity: 0.5;
+}
+.form_item .form_item_content {
+    flex: 1;
+    margin-left: 10px;
+}
+.form_item_content > input,
+.form_item_content > select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+.form_info {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--white);
+}
+.form_info_item {
+    display: flex;
+    align-items: center;
+}
+.form_info_item label {
+    display: block;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    text-align: right;
+}
+.form_info_item input {
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.error {
+    width: 100%;
+    height: 25px;
+}
+.error p {
+    padding-top: 5px;
+    padding-left: calc(25% + 10px);
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .form_item {
+        flex-direction: column;
+    }
+    .form_item .form_item_content {
+        margin-left: 0;
+    }
+    .form_item .form_item_label {
+        width: 100%;
+        text-align: start;
+    }
+    .error p {
+        padding-left: 0;
+    }
+}

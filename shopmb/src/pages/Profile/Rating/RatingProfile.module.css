@@ -1,0 +1,82 @@
+.rating_profile {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    background-color: #fff;
+}
+.rating_profile .list_ratings {
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+.rating_profile .list_ratings .list_ratings_item {
+    display: flex;
+    padding: 5px 0;
+}
+.rating_profile .list_ratings .list_ratings_item + .list_ratings_item {
+    border-top: 1px solid #caedf8;
+}
+.rating_profile .list_ratings .list_ratings_item .img {
+    width: 100px;
+    height: 100px;
+}
+.rating_profile .list_ratings .list_ratings_item .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.rating_profile .list_ratings .list_ratings_item .info {
+    /* flex: 1; */
+    width: calc(100% - 100px);
+    margin-left: 10px;
+    padding-top: 15px;
+}
+.rating_profile .list_ratings .list_ratings_item .info .name {
+    width: 100%;
+}
+.rating_profile .list_ratings .list_ratings_item .info .name a {
+    color: blue;
+}
+.rating_profile .list_ratings .list_ratings_item .info .name a span {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.rating_profile .list_ratings .list_ratings_item .info .rating {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5px;
+}
+.rating_profile .list_ratings .list_ratings_item .info .rating ul {
+    display: flex;
+    margin-right: 10px;
+}
+.rating_profile .list_ratings .list_ratings_item .info .rating ul li {
+    font-size: 13px;
+    color: #ccc;
+}
+.rating_profile .list_ratings .list_ratings_item .info .rating ul li + li {
+    padding-left: 5px;
+}
+.rating_profile .list_ratings .list_ratings_item .info .rating ul li.active {
+    color: yellow;
+}
+.rating_profile .list_ratings .list_ratings_item .info .rating span {
+    color: rgb(90, 90, 90);
+    font-size: 13px;
+}
+.rating_profile .list_ratings .list_ratings_item .info .content {
+    padding: 10px 0 5px;
+}
+.rating_profile .list_ratings .list_ratings_item .info .content span {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

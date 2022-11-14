@@ -1,0 +1,32 @@
+.cart_total {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 20px;
+}
+.cart_total_right {
+    width: 290px;
+}
+.cart_total_right .discount_code {
+    display: flex;
+    justify-content: space-between;
+}
+.cart_total_right .discount_code input {
+    outline: none;
+    margin-right: 10px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.cart_total_right .discount_code input:focus {
+    box-shadow: 0 0 2px #4141a5;
+}
+.cart_total_right .cart_total_item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+.cart_total_right .cart_total_item strong {
+    color: #cb1c22;
+}

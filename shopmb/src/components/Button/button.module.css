@@ -1,0 +1,113 @@
+.wapper {
+    /* display: flex;
+    justify-content: center; */
+    padding: 10px 13px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.wapper + .wapper {
+    margin-left: 10px;
+}
+.icon span i {
+    margin-right: 5px;
+    line-height: 15px;
+}
+a.wapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 110px; */
+}
+/* buuton size */
+.small {
+    min-width: max-content;
+    width: 35px;
+    height: 35px;
+    border-radius: 0;
+    padding: 0;
+}
+.small1 {
+    width: 30px;
+    padding: 5px 0;
+    border-radius: 0;
+}
+.medium {
+    min-width: 110px;
+}
+.large {
+    max-width: none;
+    width: 100%;
+    padding: 10px;
+}
+.circle1 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: var(--gray1);
+}
+.circle2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    color: var(--gray1);
+    border-radius: 50%;
+    border: 1px solid var(--gray1);
+    background-color: transparent;
+}
+/* button type */
+.borderBlue {
+    border: 1px solid var(--blue) !important;
+}
+.colorBlue,
+.colorBlue i {
+    color: var(--blue) !important;
+}
+.borderRed {
+    border: 1px solid var(--red) !important;
+}
+.colorRed,
+.colorRed i {
+    color: var(--red) !important;
+}
+.red {
+    background-color: var(--red);
+    color: var(--white);
+}
+.blue {
+    background-color: var(--blue);
+    color: var(--white);
+}
+.gray1 {
+    background-color: var(--gray1);
+    color: var(--white);
+}
+.black {
+    background-color: var(--black);
+    color: var(--white);
+}
+.black:hover {
+    background-color: var(--gray1);
+    opacity: 1;
+}
+.transparent {
+    background-color: transparent;
+}
+.blueAdmin {
+    background-color: var(--blueAdmin);
+    color: #fff;
+}
+.blueAdminSub {
+    background-color: var(--blueAdminSub);
+    color: #fff;
+}
+.cursorDefault {
+    cursor: default !important;
+    opacity: 0.8;
+}

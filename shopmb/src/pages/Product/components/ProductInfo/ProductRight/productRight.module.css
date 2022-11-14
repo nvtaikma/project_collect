@@ -1,0 +1,86 @@
+.product_right {
+    /* flex-direction: column; */
+    width: 100%;
+    padding: 0 20px;
+}
+
+.product_price {
+    padding: 10px 0;
+}
+.product_price strong {
+    color: red;
+    font-size: 20px;
+}
+.product_price s {
+    color: rgb(160, 159, 159);
+    margin-left: 10px;
+    font-size: 14px;
+}
+.status_product {
+    width: 100%;
+}
+.status_product ul {
+    display: flex;
+}
+.status_product ul li {
+    list-style: none;
+    margin-right: 10px;
+    position: relative;
+}
+.status_product ul li + li::before {
+    position: absolute;
+    content: '|';
+    top: 0;
+    left: -5px;
+    color: #333;
+}
+.status_product ul li span {
+    /* color: rgb(112, 112, 153); */
+    margin-left: 5px;
+}
+.product_quantily {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+.product_quantily .quantily {
+    display: flex;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+}
+.product_quantily .quantily .minus {
+    border-right: 1px solid #ccc;
+}
+.product_quantily .quantily .plus {
+    border-left: 1px solid #ccc;
+}
+.product_quantily .quantily button {
+    width: 20px;
+    padding: 0;
+    border-radius: 0;
+}
+.product_quantily .quantily input {
+    width: 50px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+.btn {
+    width: 100%;
+    margin-top: 10px;
+}
+.btn {
+    margin-top: 20px;
+}
+.btn a span {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+.btn a p {
+    font-size: 11px;
+    color: #fff;
+    margin-top: 5px;
+}

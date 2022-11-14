@@ -1,0 +1,32 @@
+.title {
+    display: flex;
+    width: 100%;
+}
+.title p {
+    width: max-content;
+}
+.title p,
+.title strong {
+    font-size: 18px;
+    padding: 0 3px;
+}
+.sort_head {
+    padding: 10px 0;
+    display: flex;
+}
+.sort_head .sort + .sort {
+    margin-left: 10px;
+}
+.sort_head .sort input {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.sort_head .sort label {
+    padding-left: 5px;
+    cursor: pointer;
+}
+.wapper_pd,
+.wapper_nw {
+    padding: 10px 0;
+}
