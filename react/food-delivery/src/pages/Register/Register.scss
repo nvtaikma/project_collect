@@ -1,0 +1,29 @@
+.form__submit {
+  width: 100%;
+  margin: auto;
+  background-color: #fde4e4;
+  padding: 20px;
+  border-radius: 5px;
+
+  .form-control {
+    width: 100%;
+    background-color: transparent;
+    padding: 7px 20px;
+    border: none;
+    border-radius: unset !important;
+
+    border-bottom: 1px solid var(--text-color);
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      background-color: transparent;
+      border-color: var(--text-color);
+    }
+  }
+
+  .account__text {
+    a {
+      color: var(--active);
+    }
+  }
+}

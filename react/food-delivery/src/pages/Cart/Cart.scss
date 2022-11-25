@@ -1,0 +1,47 @@
+.table-bordered > :not(caption) > * {
+  text-align: center;
+}
+
+.subtotal {
+  h6 {
+    font-weight: 600;
+    span {
+      color: var(--active);
+      font-size: 1.5rem;
+    }
+  }
+
+  .cart__page-btn {
+    button {
+      a {
+        &:hover {
+          color: var(--white);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .table {
+    th,
+    td {
+      font-size: 0.8rem;
+    }
+  }
+  .subtotal {
+    h6 {
+      font-size: 1rem;
+      span {
+        font-size: 1.3rem;
+      }
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .addToCart__btn {
+    padding: 7px 10px !important;
+  }
+}

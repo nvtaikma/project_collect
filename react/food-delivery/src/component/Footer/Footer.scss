@@ -1,0 +1,138 @@
+.footer {
+  padding: 50px 0px 30px 0;
+
+  background-color: #fde4e4;
+
+  .footer__logo {
+    font-weight: 600;
+    font-style: 1rem;
+    margin-bottom: 15px;
+    img {
+      width: calc(100% - 70%);
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #333;
+      line-height: 28px;
+    }
+  }
+
+  .footer__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+
+  .delivery__time-list {
+    .delivery__time-item {
+      background-color: transparent;
+      span {
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--text-color);
+      }
+
+      p {
+        color: var(--text-color);
+      }
+    }
+  }
+
+  .newsletter {
+    padding: 5px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input {
+      width: 75%;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: var(--text-color);
+      }
+    }
+
+    span {
+      background-color: var(--active);
+      padding: 5px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      .icon {
+        color: var(--white);
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+    color: var(--active);
+  }
+
+  .social__links {
+    span {
+      .icon {
+        padding: 5;
+        background-color: var(--active);
+        color: var(--white);
+        border-radius: 50%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer .newsletter input {
+    width: 72%;
+  }
+  .footer .newsletter span {
+    padding: 5px 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    .delivery-align {
+      align-self: end;
+      margin-bottom: 8px;
+    }
+
+    .footer__title {
+      font-size: 0.8rem;
+    }
+    .delivery__time-list {
+      .delivery__time-item {
+        span {
+          font-size: 0.8rem;
+        }
+
+        p {
+          font-size: 0.7rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .newsletter {
+      padding: 10px 7px;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer {
+    .copyright {
+      text-align: center;
+    }
+    .social__links {
+      justify-content: center !important;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.AllFoods__search {
+  border: 1px solid #fde4e4;
+  padding: 7px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  div {
+    flex: 9;
+    input {
+      width: 85%;
+      background-color: transparent;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    .icon__close {
+      font-size: 1rem;
+    }
+  }
+
+  span {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    .icon__search {
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      height: 100%;
+      left: -5px;
+      border-left: 1px solid #fde4e4;
+    }
+  }
+}
+
+.sorting__widgets {
+  width: 50%;
+  float: right;
+  .form-select {
+    border: 1px solid #fde4e4;
+    padding: 7px 15px;
+    &:focus {
+      border-color: #fde4e4;
+      box-shadow: 0 0 0 0.25rem #fde4e4;
+    }
+  }
+}
+
+// PAGINATE
+.paginate-btns {
+  width: 80%;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  list-style: none;
+  margin-top: 30px;
+
+  li {
+    a {
+      background-color: var(--active);
+      padding: 5px 13px;
+      color: var(--white) !important;
+      border-radius: 5px;
+      margin: 5px;
+
+      &:hover {
+        background-color: var(--hover-active);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sorting__widgets {
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .paginate-btns {
+    padding-left: 0;
+    li {
+      a {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        margin: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.cart__item-wrapper {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+    img {
+        margin-top: 5px;
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+    }
+
+    .cart__item-info {
+        width: 100%;
+
+        .cart__item-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .cart__item-price {
+            font-size: 0.9rem;
+            color: var(--text-color);
+
+            span {
+                font-size: 0.9rem;
+                font-weight: 600;
+                color: var(--active);
+            }
+        }
+
+        .cart__item-calculation {
+            background-color: #fde4e4;
+            border-radius: 5px;
+            padding: 2px 5px;
+            cursor: pointer;
+            .icon {
+                font-size: 1.5rem;
+            }
+        }
+
+        .cart__item-close {
+            font-size: 1.2rem;
+            font-weight: 700;
+            align-self: flex-start;
+            cursor: pointer;
+        }
+    }
+}

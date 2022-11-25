@@ -1,0 +1,164 @@
+.header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    position: fixed;
+    border-bottom: transparent;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 999;
+    .header__wrap {
+        a {
+            img {
+                height: 40px;
+                width: 150px;
+            }
+        }
+
+        .navigation {
+            .menu {
+                a {
+                    position: relative;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: var(--text-color);
+                    transition: 0.3s;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        transition: width 0.5s ease;
+                        height: 2px;
+                        background-color: var(--active);
+                    }
+
+                    &.active::after,
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .header__user {
+            .user__list {
+                background-color: var(--hover-active);
+                border-radius: 2px;
+                text-align: center;
+                -webkit-box-shadow: 0px 10px 13px -7px #000000, 2px 12px 36px 2px rgba(0, 0, 0, 0);
+                box-shadow: 0px 10px 13px -7px #000000, 2px 12px 36px 2px rgba(0, 0, 0, 0);
+
+                span {
+                    line-height: 30px;
+                    padding: 5px 16px;
+                    cursor: pointer;
+                    font-size: 0.9rem;
+
+                    a {
+                        color: var(--color-white);
+                    }
+                    &:hover {
+                        background-color: #c87777;
+                    }
+                }
+            }
+
+            .header__user-img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .mobile__menu {
+                font-weight: 600;
+                display: none;
+            }
+        }
+    }
+    &.header__shrink {
+        transition: 0.8s ease-in;
+        background-color: rgb(0 0 0 / 80%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 60px;
+        line-height: 60px;
+        .header__wrap {
+            a {
+                img {
+                    height: 32px;
+                    width: 100px;
+                }
+            }
+
+            .navigation {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(113, 113, 113, 0.425);
+                z-index: 99;
+                display: none;
+
+                .menu {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 250px;
+                    height: 100%;
+                    background-color: #373030;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 100;
+                    line-height: 20px;
+
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .header__user {
+                .user__list {
+                    span {
+                        font-size: 0.8rem;
+                        line-height: 20px;
+
+                        a {
+                            color: var(--color-white);
+                        }
+                        &:hover {
+                            background-color: #c87777;
+                        }
+                    }
+                }
+
+                .header__user-img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            // on-off menu
+            .show__menu {
+                display: block;
+            }
+
+            .header__user {
+                .mobile__menu {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
