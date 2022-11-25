@@ -1,0 +1,8 @@
+.parcel-cache/
+.vscode/
+dist/
+doc/
+node_modules/
+
+**.css.map
+**.css

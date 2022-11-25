@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "english": "Released",
+    "vietnamese": "Đã phát hành"
+  },
+  {
+    "id": 1,
+    "english": "en",
+    "vietnamese": "Tiếng Anh"
+  },
+  {
+    "id": 2,
+    "english": "ja",
+    "vietnamese": "Nhật Bản"
+  },
+  {
+    "id": 3,
+    "english": "ko",
+    "vietnamese": "Hàn Quốc"
+  },
+  {
+    "id": 4,
+    "english": "fr",
+    "vietnamese": "Pháp"
+  }
+]
