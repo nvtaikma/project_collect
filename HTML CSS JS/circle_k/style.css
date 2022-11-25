@@ -1,0 +1,99 @@
+
+.bb{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.c{
+    font-size: 160px;
+    color: aliceblue;
+    
+    
+}
+.container{
+    
+    width: 990px;
+    height: 570px;
+    background-color: rgb(253, 253, 247);
+    position: relative;
+}
+.top{
+    position: absolute;
+    width: 990px;
+    height: 340px;
+    background-color: red;
+    top: 5px;
+    left: 5px;
+}
+.circle{
+    display: flex;
+    margin-top: 90px;
+    margin-left: 30px;
+}
+.bottom{
+    position: absolute;
+    width: 990px;
+    height: 90px;
+    background-color: rgb(255, 136, 0);
+    bottom: 125px;
+    left: 5px;
+}
+.tt{
+    position: absolute;
+    margin-left: 498px;
+    bottom: -13px;
+}
+.tron{
+    position: absolute;
+    right: 82px;
+    bottom: 46px;
+    display: block;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: white;
+}
+.k{
+    position: absolute;
+    width: 40px;
+    height: 142px;
+    background-color: red;
+    top: 51px;
+    right: 140px;
+}
+.v{
+    position: absolute;
+    width: 45px;
+    height: 150px;
+    background-color: red;
+    transform: skew(45deg);
+    top: 112px;
+    right: 24px;
+
+}
+.b{
+    position: absolute;
+    width: 45px;
+    height: 58px;
+    background-color: red;
+    transform: skew(135deg);
+    top: 53px;
+    right: 69px;
+    
+}
+.tt{
+    
+    font-size: 105px;
+    color: black;
+    margin-left: 475px;
+}
+.g{
+    font-size: 56px;
+    color: red;
+    margin-left: 18px;
+    margin-top: 282px;
+}
+
+  
